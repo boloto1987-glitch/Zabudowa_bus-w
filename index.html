@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zabudowy Busów Wrocław | Profesjonalny montaż i sklejka wodoodporna</title>
+    <title>Zabudowy Busów – Cała Polska (Dojazd Gratis) | Sklejka i Montaż</title>
     <style>
         :root {
             --bg-color: #121212;
             --card-bg: #1e1e1e;
-            --accent: #ff8c00; /* Індустріальний помаранчевий */
+            --accent: #ff8c00;
             --text-main: #e0e0e0;
             --text-muted: #a0a0a0;
             --border-color: #333333;
@@ -27,10 +27,12 @@
         header {
             background: #181818;
             border-bottom: 1px solid var(--border-color);
-            padding: 20px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -55,18 +57,34 @@
         .hero {
             padding: 60px 20px;
             text-align: center;
-            background: linear-gradient(rgba(18,18,18,0.9), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80') center/cover;
+            background: linear-gradient(rgba(18,18,18,0.88), rgba(18,18,18,0.92)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80') center/cover;
             border-bottom: 1px solid var(--border-color);
+        }
+        .promo-pill {
+            display: inline-block;
+            background: rgba(255, 140, 0, 0.15);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
         }
         .hero h1 {
             font-size: 32px;
             margin-bottom: 15px;
             color: #fff;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .hero p {
             font-size: 16px;
             color: var(--text-muted);
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 25px auto;
         }
         .btn {
@@ -146,12 +164,13 @@
 
     <header>
         <div class="logo">Zabudowy <span>Busów</span></div>
-        <div class="contact-top">Wrocław | <b>Tel: +48 XXX XXX XXX</b></div>
+        <div class="contact-top">Wrocław / Cała Polska – <b>Dojazd GRATIS</b> | <b>Tel: +48 XXX XXX XXX</b></div>
     </header>
 
     <section class="hero">
-        <h1>Profesjonalna zabudowa przestrzeni ładunkowej busów we Wrocławiu</h1>
-        <p>Od Sprintera do Mastera. Wykonujemy fachowy montaż podłóg ze sklejki antypoślizgowej oraz bocznych paneli ochronnych.</p>
+        <div class="promo-pill">🚚 Dojeżdżamy w całej Polsce — Dojazd GRATIS!</div>
+        <h1>Profesjonalna zabudowa przestrzeni ładunkowej busów w całej Polsce</h1>
+        <p>Od Sprintera do Mastera. Wykonujemy fachowy montaż podłóg ze sklejki antypoślizgowej oraz bocznych paneli ochronnych. Działamy we Wrocławiu oraz z darmowym dojazdem do klienta na terenie całej Polski!</p>
         <a href="#katalog" class="btn">Zobacz katalog sklejek</a>
     </section>
 
@@ -160,23 +179,23 @@
         
         <div class="grid">
             <div class="card">
-                <span class="badge">Podłoga (9mm+)</span>
+                <span class="badge">Podłoga (9mm)</span>
                 <h3>Sklejka antypoślizgowa Hexa (Szara / Ciemny Brąz)</h3>
-                <p>Wodoodporna sklejka z powłoką antypoślizgową typu Hexa. Idealna na intensywnie eksploatowane podłogi w busach.</p>
+                <p>Wodoodporna sklejka 9 mm z powłoką antypoślizgową typu siatka Hexa. Idealna na intensywnie eksploatowane podłogi w busach.</p>
                 <span class="badge">Wodoodporna</span>
             </div>
 
             <div class="card">
                 <span class="badge">Boki i Ściany</span>
                 <h3>Sklejka Szara / Ciemny Brąz</h3>
-                <p>Wytrzymałe panele ścienne zabezpieczające blachę przed uszkodzeniami mechanicznymi. Dostępne w wersji szarej oraz w ciemnym brązie.</p>
+                <p>Wytrzymałe, wodoodporne panele ścienne zabezpieczające blachę przed uszkodzeniami. Dostępne w kolorze szarym oraz ciemny brąz.</p>
                 <span class="badge">Wodoodporna</span>
             </div>
 
             <div class="card">
                 <span class="badge">Boki i Ściany</span>
                 <h3>Sklejka Jasna Zwykła</h3>
-                <p>Klasyczna, estetyczna sklejka do estetycznego wykończenia wnętrza busa w jasnych odciнях.</p>
+                <p>Klasyczna, estetyczna sklejka do praktycznego wykończenia ścian bocznych i drzwi przestrzeni ładunkowej w jasnym odcieniu.</p>
                 <span class="badge">Standard</span>
             </div>
         </div>
@@ -184,22 +203,22 @@
         <h2 class="section-title" style="margin-top: 50px;">Obsługiwane marki i usługi</h2>
         <div class="grid">
             <div class="card">
-                <h3>Pełen zakres aut</h3>
-                <p>Mercedes Sprinter, Renault Master, Fiat Ducato, Ford Transit, Iveco Daily, VW Crafter i inne.</p>
+                <h3>Wszystkie modele busów</h3>
+                <p>Mercedes Sprinter, Renault Master, Fiat Ducato, Ford Transit, Iveco Daily, VW Crafter, Peugeot Boxer, Citroën Jumper i inne.</p>
             </div>
             <div class="card">
-                <h3>Profesjonalny montaż</h3>
-                <p>Montujemy zabudowy w naszej warsztacie we Wrocławiu z zachowaniem najwyższej precyzji.</p>
+                <h3>Montaż w całej Polsce (Dojazd Gratis)</h3>
+                <p>Posiadamy bazę we Wrocławiu, ale przyjeżdżamy bezpośrednio pod wskazany adres w dowolnym miejscu w Polsce. Dojazd zawsze gratis!</p>
             </div>
             <div class="card">
-                <h3>Indywidualne wyceny</h3>
-                <p>Skontaktuj się z nami, aby szybko ustalić kosztorys pod Twój konkretny model samochodu.</p>
+                <h3>Szybka wycena</h3>
+                <p>Zadzwoń lub napisz do nas — dobierzemy odpowiedni wariant sklejki i przygotujemy dokładny kosztorys pod Twój samochód.</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Zabudowy Busów Wrocław. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 Zabudowy Busów – Wrocław & Cała Polska (Dojazd Gratis). Wszelkie prawa zastrzeżone.</p>
     </footer>
 
 </body>
