@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabudowy Busów Wrocław | Profesjonalny montaż i sklejka wodoodporna</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent: #ff8c00; /* Індустріальний помаранчевий */
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border-color: #333333;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        header {
+            background: #181818;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: var(--accent);
+        }
+        .contact-top {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .contact-top b {
+            color: #fff;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(18,18,18,0.9), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80') center/cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 16px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #121212;
+            padding: 12px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h2.section-title {
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            color: #fff;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media(min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            border-color: var(--accent);
+        }
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+        .badge {
+            display: inline-block;
+            background: #2a2a2a;
+            color: var(--accent);
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #181818;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Zabudowy <span>Busów</span></div>
+        <div class="contact-top">Wrocław | <b>Tel: +48 XXX XXX XXX</b></div>
+    </header>
+
+    <section class="hero">
+        <h1>Profesjonalna zabudowa przestrzeni ładunkowej busów we Wrocławiu</h1>
+        <p>Od Sprintera do Mastera. Wykonujemy fachowy montaż podłóg ze sklejki antypoślizgowej oraz bocznych paneli ochronnych.</p>
+        <a href="#katalog" class="btn">Zobacz katalog sklejek</a>
+    </section>
+
+    <div class="container" id="katalog">
+        <h2 class="section-title">Wybierz rodzaj materiału (Sklejka)</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Podłoga (9mm+)</span>
+                <h3>Sklejka antypoślizgowa Hexa (Szara / Ciemny Brąz)</h3>
+                <p>Wodoodporna sklejka z powłoką antypoślizgową typu Hexa. Idealna na intensywnie eksploatowane podłogi w busach.</p>
+                <span class="badge">Wodoodporna</span>
+            </div>
+
+            <div class="card">
+                <span class="badge">Boki i Ściany</span>
+                <h3>Sklejka Szara / Ciemny Brąz</h3>
+                <p>Wytrzymałe panele ścienne zabezpieczające blachę przed uszkodzeniami mechanicznymi. Dostępne w wersji szarej oraz w ciemnym brązie.</p>
+                <span class="badge">Wodoodporna</span>
+            </div>
+
+            <div class="card">
+                <span class="badge">Boki i Ściany</span>
+                <h3>Sklejka Jasna Zwykła</h3>
+                <p>Klasyczna, estetyczna sklejka do estetycznego wykończenia wnętrza busa w jasnych odciнях.</p>
+                <span class="badge">Standard</span>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 50px;">Obsługiwane marki i usługi</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Pełen zakres aut</h3>
+                <p>Mercedes Sprinter, Renault Master, Fiat Ducato, Ford Transit, Iveco Daily, VW Crafter i inne.</p>
+            </div>
+            <div class="card">
+                <h3>Profesjonalny montaż</h3>
+                <p>Montujemy zabudowy w naszej warsztacie we Wrocławiu z zachowaniem najwyższej precyzji.</p>
+            </div>
+            <div class="card">
+                <h3>Indywidualne wyceny</h3>
+                <p>Skontaktuj się z nami, aby szybko ustalić kosztorys pod Twój konkretny model samochodu.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zabudowy Busów Wrocław. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
