@@ -32,7 +32,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -48,19 +48,29 @@
             color: var(--accent);
         }
         .contact-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
             font-size: 14px;
             color: var(--text-muted);
         }
-        .contact-top a {
+        .btn-sm {
+            display: inline-block;
+            background: #25D366; /* Зелений для WhatsApp */
             color: #fff;
-            text-decoration: none;
-            background: rgba(255, 140, 0, 0.2);
-            border: 1px solid var(--accent);
-            padding: 5px 10px;
+            padding: 6px 12px;
             border-radius: 4px;
             font-weight: bold;
-            display: inline-block;
-            margin-left: 5px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .btn-tg {
+            background: #0088cc; /* Синій для Telegram */
+        }
+        .btn-call {
+            background: var(--accent);
+            color: #121212;
         }
         .hero {
             padding: 60px 20px;
@@ -95,6 +105,13 @@
             max-width: 650px;
             margin: 0 auto 25px auto;
         }
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
         .btn {
             display: inline-block;
             background: var(--accent);
@@ -105,6 +122,10 @@
             border-radius: 4px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
         }
         .container {
             max-width: 1100px;
@@ -172,14 +193,23 @@
 
     <header>
         <div class="logo">Zabudowy <span>Busów</span></div>
-        <div class="contact-top">Wrocław / Cała Polska – <b>Dojazd GRATIS</b> <a href="tel:+48578550226">📞 +48 578 550 226</a></div>
+        <div class="contact-top">
+            <span>Wrocław / Cała Polska (Dojazd GRATIS)</span>
+            <a href="tel:+48578550226" class="btn-sm btn-call">📞 Zadzwoń</a>
+            <a href="https://wa.me/48578550226" target="_blank" class="btn-sm">WhatsApp</a>
+            <a href="https://t.me/+48578550226" target="_blank" class="btn-sm btn-tg">Telegram</a>
+        </div>
     </header>
 
     <section class="hero">
         <div class="promo-pill">🚚 Dojeżdżamy w całej Polsce — Dojazd GRATIS!</div>
         <h1>Profesjonalna zabudowa przestrzeni ładunkowej busów w całej Polsce</h1>
         <p>Od Sprintera do Mastera. Wykonujemy fachowy montaż podłóg ze sklejki antypoślizgowej oraz bocznych paneli ochronnych. Działamy we Wrocławiu oraz z darmowym dojazdem do klienta na terenie całej Polski!</p>
-        <a href="tel:+48578550226" class="btn">Zadzwoń teraz</a>
+        
+        <div class="hero-buttons">
+            <a href="tel:+48578550226" class="btn">📞 Zadzwoń teraz</a>
+            <a href="https://wa.me/48578550226" target="_blank" class="btn btn-whatsapp">💬 Napisz na WhatsApp</a>
+        </div>
     </section>
 
     <div class="container" id="katalog">
@@ -189,45 +219,4 @@
             <div class="card">
                 <span class="badge">Podłoga (9mm)</span>
                 <h3>Sklejka antypoślizgowa Hexa (Szara / Ciemny Brąz)</h3>
-                <p>Wodoodporna sklejka 9 mm z powłoką antypoślizgową typu siatka Hexa. Idealna na intensywnie eksploatowane podłogi w busach.</p>
-                <span class="badge">Wodoodporna</span>
-            </div>
-
-            <div class="card">
-                <span class="badge">Boki i Ściany</span>
-                <h3>Sklejka Szara / Ciemny Brąz</h3>
-                <p>Wytrzymałe, wodoodporne panele ścienne zabezpieczające blachę przed uszkodzeniami. Dostępne w kolorze szarym oraz ciemny brąz.</p>
-                <span class="badge">Wodoodporna</span>
-            </div>
-
-            <div class="card">
-                <span class="badge">Boki i Ściany</span>
-                <h3>Sklejka Jasna Zwykła</h3>
-                <p>Klasyczna, estetyczna sklejka do praktycznego wykończenia ścian bocznych i drzwi przestrzeni ładunkowej w jasnym odcieniu.</p>
-                <span class="badge">Standard</span>
-            </div>
-        </div>
-
-        <h2 class="section-title" style="margin-top: 50px;">Obsługiwane marki i usługi</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Wszystkie modele busów</h3>
-                <p>Mercedes Sprinter, Renault Master, Fiat Ducato, Ford Transit, Iveco Daily, VW Crafter, Peugeot Boxer, Citroën Jumper i inne.</p>
-            </div>
-            <div class="card">
-                <h3>Montaż w całej Polsce (Dojazd Gratis)</h3>
-                <p>Posiadamy bazę we Wrocławiu, ale przyjeżdżamy bezpośrednio pod wskazany adres w dowolnym miejscu w Polsce. Dojazd zawsze gratis!</p>
-            </div>
-            <div class="card">
-                <h3>Szybka wycena</h3>
-                <p>Zadzwoń pod <a href="tel:+48578550226" style="color: var(--accent); text-decoration: underline;">+48 578 550 226</a> — dobierzemy odpowiedni wariant sklejki i przygotujemy kosztorys.</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Zabudowy Busów – Wrocław & Cała Polska (Dojazd Gratis). Wszelkie prawa zastrzeżone.</p>
-    </footer>
-
-</body>
-</html>
+                <p>Wodoodporna sklejka 9 mm z powłokю antypoślizgową typu siatka Hexa.
